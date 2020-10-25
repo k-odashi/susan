@@ -1,154 +1,280 @@
-/* line 1, /Users/kodashim/Desktop/Wheeler/susan/style.scss */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   line-height: 1.5;
   color: #212529;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+}
 
-/* line 8, /Users/kodashim/Desktop/Wheeler/susan/style.scss */
 .wrap {
   margin: 20px auto;
   padding: 10px 12px;
-  max-width: 600px; }
+  max-width: 600px;
+}
 
-/* line 14, /Users/kodashim/Desktop/Wheeler/susan/style.scss */
 .style-hidden {
-  display: none; }
+  display: none;
+}
 
-/* line 18, /Users/kodashim/Desktop/Wheeler/susan/style.scss */
 header {
-  margin-bottom: 24px; }
-  /* line 21, /Users/kodashim/Desktop/Wheeler/susan/style.scss */
-  header h1 {
-    font-weight: 900;
-    font-size: 32px;
-    color: #666; }
-  /* line 27, /Users/kodashim/Desktop/Wheeler/susan/style.scss */
-  header p {
-    font-size: 14px;
-    color: #444; }
+  margin-bottom: 24px;
+  position: relative;
+}
 
-/* line 33, /Users/kodashim/Desktop/Wheeler/susan/style.scss */
+header h1 {
+  font-weight: 900;
+  font-size: 32px;
+  color: #666;
+}
+
+header p {
+  font-size: 14px;
+  color: #444;
+}
+
+header time {
+  position: absolute;
+  color: #999;
+  font-size: 10px;
+  bottom: 4px;
+  right: 4px;
+}
+
 .nextTime {
   background: #fff;
-  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   padding: 24px;
   margin-bottom: 24px;
   z-index: -2;
-  width: 100%; }
-  /* line 42, /Users/kodashim/Desktop/Wheeler/susan/style.scss */
-  .nextTime h1 {
-    font-size: 18px;
-    font-weight: 900; }
-  /* line 47, /Users/kodashim/Desktop/Wheeler/susan/style.scss */
-  .nextTime-head {
-    margin-bottom: 12px;
-    display: flex; }
-    /* line 51, /Users/kodashim/Desktop/Wheeler/susan/style.scss */
-    .nextTime-head h1 {
-      width: 10%;
-      font-size: 14px;
-      color: #999; }
-    /* line 57, /Users/kodashim/Desktop/Wheeler/susan/style.scss */
-    .nextTime-headWrap {
-      display: flex;
-      justify-content: space-between;
-      margin-left: 12px; }
-      /* line 62, /Users/kodashim/Desktop/Wheeler/susan/style.scss */
-      .nextTime-headWrap i {
-        font-size: 16px;
-        vertical-align: top;
-        margin-right: 2px; }
-      /* line 68, /Users/kodashim/Desktop/Wheeler/susan/style.scss */
-      .nextTime-headWrap a {
-        display: flex;
-        align-items: center;
-        margin-left: 20px;
-        font-size: 14px;
-        line-height: 1.2;
-        font-weight: bold;
-        color: #5784b1; }
-  /* line 80, /Users/kodashim/Desktop/Wheeler/susan/style.scss */
-  .nextTime-body {
-    display: flex; }
-    /* line 83, /Users/kodashim/Desktop/Wheeler/susan/style.scss */
-    .nextTime-body h1 {
-      width: 10%;
-      font-size: 14px;
-      color: #999; }
-    /* line 89, /Users/kodashim/Desktop/Wheeler/susan/style.scss */
-    .nextTime-body h2 {
-      font-size: 14px;
-      font-weight: 900;
-      display: inline-block; }
-    /* line 95, /Users/kodashim/Desktop/Wheeler/susan/style.scss */
-    .nextTime-bodyWrap {
-      margin-left: 12px; }
-      /* line 98, /Users/kodashim/Desktop/Wheeler/susan/style.scss */
-      .nextTime-bodyWrap i {
-        font-size: 16px;
-        vertical-align: top;
-        margin-right: 2px; }
-      /* line 104, /Users/kodashim/Desktop/Wheeler/susan/style.scss */
-      .nextTime-bodyWrap a {
-        display: inline-block;
-        align-items: center;
-        font-size: 14px;
-        line-height: 1.2;
-        font-weight: bold;
-        color: #5784b1; }
-    /* line 114, /Users/kodashim/Desktop/Wheeler/susan/style.scss */
-    .nextTime-body li {
-      font-size: 14px;
-      margin-top: 4px;
-      display: flex;
-      align-items: center; }
-      /* line 120, /Users/kodashim/Desktop/Wheeler/susan/style.scss */
-      .nextTime-body li:before {
-        content: "";
-        display: block;
-        width: 4px;
-        height: 4px;
-        margin-right: 6px;
-        background: #ccc;
-        border-radius: 50%; }
+  width: 100%;
+}
 
-/* line 134, /Users/kodashim/Desktop/Wheeler/susan/style.scss */
+.nextTime h1 {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.nextTime-head {
+  margin-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nextTime-head h1 {
+  width: 10%;
+  font-size: 14px;
+  color: #999;
+}
+
+.nextTime-headWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 12px;
+}
+
+.nextTime-headWrap i {
+  font-size: 16px;
+  vertical-align: top;
+  margin-right: 2px;
+}
+
+.nextTime-headWrap a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: bold;
+  color: #5784b1;
+  white-space: nowrap;
+}
+
+.nextTime-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nextTime-body h1 {
+  width: 10%;
+  font-size: 14px;
+  color: #999;
+}
+
+.nextTime-body h2 {
+  font-size: 14px;
+  font-weight: 900;
+  display: inline-block;
+}
+
+.nextTime-bodyWrap {
+  margin-left: 12px;
+}
+
+.nextTime-bodyWrap i {
+  font-size: 16px;
+  vertical-align: top;
+  margin-right: 2px;
+}
+
+.nextTime-bodyWrap a {
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: bold;
+  color: #5784b1;
+}
+
+.nextTime-body li {
+  font-size: 14px;
+  margin-top: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nextTime-body li:before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  margin-right: 6px;
+  background: #ccc;
+  border-radius: 50%;
+}
+
 .curriculum {
   margin-bottom: 24px;
   padding: 8px 12px;
-  background: #fcfcfc; }
-  /* line 139, /Users/kodashim/Desktop/Wheeler/susan/style.scss */
-  .curriculum h1 {
-    font-weight: 900;
-    font-size: 14px;
-    color: #999; }
-  /* line 145, /Users/kodashim/Desktop/Wheeler/susan/style.scss */
-  .curriculum li {
-    font-size: 14px;
-    margin-top: 4px;
-    display: flex;
-    align-items: center; }
-    /* line 151, /Users/kodashim/Desktop/Wheeler/susan/style.scss */
-    .curriculum li:before {
-      content: "";
-      display: block;
-      width: 4px;
-      height: 4px;
-      margin-right: 6px;
-      background: #ccc;
-      border-radius: 50%; }
+  background: #f9f9f9;
+}
 
-/* line 163, /Users/kodashim/Desktop/Wheeler/susan/style.scss */
+.curriculum h1 {
+  font-weight: 900;
+  font-size: 16px;
+  color: #333;
+}
+
+.curriculum h2 {
+  margin: 20px 0 4px;
+  padding-top: 6px;
+  font-weight: 900;
+  font-size: 14px;
+  color: #666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.curriculum__link {
+  margin-left: 8px;
+  font-weight: 900;
+  font-size: 14px;
+  color: #5784b1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.curriculum__link i {
+  font-size: 16px;
+}
+
+.curriculum li {
+  font-size: 14px;
+  margin-top: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.curriculum li:before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  margin-right: 6px;
+  background: #ccc;
+  border-radius: 50%;
+}
+
+.work {
+  margin-bottom: 24px;
+  padding: 8px 12px;
+  background: #f9f9f9;
+}
+
+.work h1 {
+  font-weight: 900;
+  font-size: 16px;
+  color: #333;
+}
+
+.work h2 {
+  margin: 20px 0 4px;
+  padding-top: 6px;
+  font-weight: 900;
+  font-size: 14px;
+  color: #666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.work p {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #333;
+  line-height: 1.3;
+}
+
+.work__link {
+  color: #5784b1;
+  font-weight: 900;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 footer {
-  border-top: 1px solid #eee; }
-  /* line 166, /Users/kodashim/Desktop/Wheeler/susan/style.scss */
-  footer small {
-    margin-top: 12px;
-    display: flex;
-    justify-content: center;
-    font-size: 10px;
-    color: #999; }
+  border-top: 1px solid #eee;
+}
 
+footer small {
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 10px;
+  color: #999;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,381 @@
+/**************************************************
+オファー設定
+**************************************************/
+
+.offer-price_off {
+	font-family: 'Roboto', 'Noto Sans JP';
+	color: #cb0000;
+/*フォントサイズを指定していないから、親のサイズによって可変するよ*/
+}
+/*文字崩れがする為、ジャスティファイ解除するよ*/
+.offer-price_justify_left {
+	text-align: left;
+}
+
+/*----------PC1カラム・SP1カラム----------*/
+
+.offer-container_01 {
+	display: grid;
+	padding-bottom: 20px;
+}
+
+.offer-wrap_column-01 {
+	padding: 0 15px;
+	font-size: 14px;
+}
+.offer-wrap_column-01 > p {
+	line-height: 1.1;
+}
+
+.offer-price_title-01 {
+	padding-bottom: 7px;
+	font-size:18px;
+}
+
+.offer-price_black-01 {
+	font-size: 35px;
+	font-family: 'Roboto', 'Noto Sans JP';
+}
+.offer-price_red-01 {
+	font-size: 35px;
+	font-family: 'Roboto', 'Noto Sans JP';
+	color: #cb0000;
+}
+
+.offer-price_down-01 {
+	font-size: 12px;
+	font-family: 'Roboto', 'Noto Sans JP';
+	color: #767676;
+}
+
+@media (min-width: 767px) {
+	.offer-container_01 {
+		max-width: 850px;
+		margin: 0 auto;
+		grid-template-columns: 440px 1fr;
+		align-items: end;
+		grid-column-gap: 15px;
+	}
+	.offer-wrap_column-01 {
+		font-size: 17px;
+	}
+	.offer-price_black-01 {
+		font-size: 50px;
+	}
+	.offer-price_red-01 {
+		font-size: 50px;
+	}
+}
+
+/*----------PC2カラム・SP1カラム----------*/
+
+.offer-pd_top_01-2 {
+	padding-top: 30px;
+}
+
+.offer-container_01-2 {
+	display: grid;
+}
+
+.offer-wrap_column-01-2 {
+	padding: 0 15px;
+	font-size: 14px;
+}
+.offer-wrap_column-01-2 > p {
+	line-height: 1.5;
+}
+
+.offer-price_title-01-2 {
+	padding-bottom: 7px;
+	font-size:11px;
+	line-height: 1;
+}
+
+.offer-price_black-01-2 {
+	font-size: 35px;
+	font-family: 'Roboto', 'Noto Sans JP';
+}
+.offer-price_red-01-2 {
+	font-size: 35px;
+	font-family: 'Roboto', 'Noto Sans JP';
+	color: #cb0000;
+}
+
+.offer-price_down-01-2 {
+	font-size: 12px;
+	font-family: 'Roboto', 'Noto Sans JP';
+	color: #767676;
+}
+
+@media (min-width: 767px) {
+	.offer-pd_top_01-2 {
+		padding-top: 0px;
+	}
+	.offer-container_01-2 {
+		max-width: 850px;
+		margin: 0 auto;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 50px;
+	}
+	.offer-wrap_column-01-2 {
+		font-size: 17px;
+		padding: 0px;
+	}
+	.offer-price_black-01-2 {
+		font-size: 50px;
+	}
+	.offer-price_red-01-2 {
+		font-size: 50px;
+	}
+}
+
+/*----------PC1カラム・SP2カラム----------*/
+
+.offer-container_02 {
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 0 auto;
+}
+
+.offer-wrap_column-02 {
+	padding: 0 10px;
+	font-size: 13px;
+}
+.offer-wrap_column-02 > p {
+	line-height: 1.2;
+}
+
+.offer-price_title-02 {
+	padding-bottom: 6px;
+}
+
+.offer-price_black-02 {
+	font-size: 35px;
+	font-family: 'Roboto', 'Noto Sans JP';
+}
+.offer-price_red-02 {
+	font-size: 30px;
+	font-family: 'Roboto', 'Noto Sans JP';
+	color: #cb0000;
+}
+
+.offer-price_down-02 {
+	font-size: 10px;
+	font-family: 'Roboto', 'Noto Sans JP';
+	color: #767676;
+	padding-bottom: 6px;
+}
+
+
+
+@media (min-width: 767px) {
+	.offer-container_02 {
+		grid-template-columns: 1fr;
+	}
+	.offer-container_02-pc {
+		display: grid;
+		grid-template-columns: 250px 1fr;
+		align-items: end;
+		grid-column-gap: 15px;
+	}
+	.offer-wrap_column-02 {
+		font-size: 17px;
+		padding: 0px;
+	}
+	.offer-price_black-02 {
+		font-size: 50px;
+	}
+	.offer-price_red-02 {
+		font-size: 50px;
+	}
+	.offer-pd_top_02 {
+		padding-top: 15px;
+	}
+}
+
+/*----------小：PC1カラム・SP2カラム----------*/
+
+.offer-container-02_2 {
+	max-width: 850px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 130px 1fr;
+	grid-column-gap: 8px;
+	padding: 5px 15px;
+}
+
+.offer-wrap_column-02_2 {
+	font-size: 13px;
+}
+.offer-wrap_column-02_2 > p {
+	line-height: 1.1;
+}
+
+.offer-price_title-02_2 {
+	padding: 3px 0px 3px;
+	font-size: 15px;
+}
+
+.offer-price_black-02_2 {
+	font-size: 35px;
+	font-family: 'Roboto', 'Noto Sans JP';
+}
+.offer-price_red-02_2 {
+	font-size: 30px;
+	font-family: 'Roboto', 'Noto Sans JP';
+	color: #cb0000;
+}
+
+.offer-price_down-02_2 {
+	font-size: 10px;
+	font-family: 'Roboto', 'Noto Sans JP';
+	color: #767676;
+	padding-bottom: 6px;
+}
+
+
+
+@media (min-width: 767px) {
+	.offer-container-02_2 {
+		grid-template-columns: 250px 425px;
+		align-items: end;
+		justify-content: center;
+	}
+	.offer-wrap_column-02_2 {
+		font-size: 17px;
+		padding: 0px;
+	}
+	.offer-price_title-02_2 {
+		padding-bottom: 6px;
+	}
+	.offer-price_black-02_2 {
+		font-size: 50px;
+	}
+	.offer-price_red-02_2 {
+		font-size: 50px;
+	}
+
+}
+
+/**************************************************
+オファー：アイコン設定
+**************************************************/
+
+/*----------PC1カラム・SP1カラム----------*/
+.offer-icon_wrap-01 {
+	padding: 5px 0px 8px;
+}
+
+.offer-icon_01 {
+	background-color: #cb0000;
+	color: #FFF;
+	padding: 2px 5px;
+	border-radius: 3px;
+	font-size: 13px;
+}
+@media (min-width: 767px) {
+	.offer-icon_01 {
+		font-size: 15px;
+	}
+}
+
+/*----------PC1カラム・SP2カラム----------*/
+.offer-icon_wrap-02 {
+/*	padding: 5px 0px 8px;*/
+	padding: 0px;
+}
+
+.offer-icon_02 {
+	background-color: #cb0000;
+	color: #FFF;
+	padding: 0px 4px 1px;
+	border-radius: 3px;
+	font-size: 9px;
+	
+}
+@media (min-width: 767px) {
+	.offer-icon_wrap-02 {
+		padding: 8px 0px;
+	}
+	.offer-icon_02 {
+		padding: 2px 5px;
+		border-radius: 3px;
+		font-size: 15px;
+	}
+}
+
+/**************************************************
+オファー：ボタン設定
+**************************************************/
+
+.offer-btn {
+	margin: 10px 0px 5px;
+	text-align: center;
+	background-color: #004C36;
+	color: #FFF;
+	border-bottom: solid 4px #00392E;
+	border-radius: 7px;
+	width: 100%;
+	/*box-sizing → paddingがはみ出さないようにする処理*/
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 13px 15px;
+}
+
+	/*カーソルを合わせた時*/
+.offer-btn:hover {
+	background: #002A22;
+}
+
+	/*ボタンを押したとき*/
+.offer-btn:active {
+	-webkit-transform: translateY(4px);
+	transform: translateY(4px);
+	border-bottom: none;
+}
+
+
+/*----------PC1カラム・SP2カラム----------*/
+
+.offer-btn_02 {
+	margin: 3px 0px 3px;
+	text-align: center;
+	background-color: #004C36;
+	color: #FFF;
+	border-bottom: solid 4px #00392E;
+	border-radius: 7px;
+	width: 100%;
+	/*box-sizing → paddingがはみ出さないようにする処理*/
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 10px 12px;
+}
+
+	/*カーソルを合わせた時*/
+.offer-btn_02:hover {
+	background: #002A22;
+}
+
+	/*ボタンを押したとき*/
+.offer-btn_02:active {
+	-webkit-transform: translateY(4px);
+	transform: translateY(4px);
+	border-bottom: none;
+}
+@media (min-width: 767px) {
+	.offer-btn_02 {
+		margin: 10px 0px 5px;
+		padding: 13px 15px;
+	}
+}
+
+
+/**************************************************
+オファー：商品情報へ飛ばすリンクボタン
+**************************************************/
+
+.offer-Product-info {
+	padding: 10px 0px;
+	text-align: right;
+}
