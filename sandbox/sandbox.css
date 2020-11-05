@@ -1,13 +1,26 @@
 body {
   margin: 100px auto;
-  width: 500px;
+  width: 900px;
+}
+
+h1 {
+  color: #333;
+  border-bottom: 1px solid #999;
+}
+
+h2 {
+  color: #666;
+  margin-top: 80px;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: #4070ff;
 }
 
 p {
-  margin: 20px 0;
-}
-
-.back-img {
-  background: url(../work/img/offer01_sv_02.jpg);
+  color: #333;
+  font-size: 13px;
 }
 /*# sourceMappingURL=sandbox.css.map */

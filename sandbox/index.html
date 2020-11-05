@@ -4,18 +4,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="sandbox.css">
-  <title>Sandbox</title>
+  <title>Color</title>
 </head>
 <body>
 
-  <div class="back">背景画像を指定できます</div>
-  <div class="back">背景画像を指定できます</div>
+  <section>
+    <h1>テキスト/背景/グラデーション/透過</h1>
 
+    <ol>
+      <li><a href="#1">文字色を指定する</a></li>
+      <li><a href="#2">背景色を指定する</a></li>
+      <li><a href="#3">背景画像を設定する</a></li>
+      <li><a href="#4">背景のショートハンド</a></li>
+      <li><a href="#5">透過/グラデーション</a></li>
+    </ol>
 
-  <div class="back back-size-default">自動的に算出される</div>
-  <div class="back back-size-contain">縦横比は保持して、背景領域に収まる最大サイズになる</div>
-  <div class="back back-size-cover">縦横比は保持して、背景領域を完全に覆う最小サイズ</div>
-  <div class="back back-size-px">px指定できる</div>
+    <h2 id="1">color : 文字色を指定する</h2>
+    <p>redなどのカラーネームや、#666などのカラーコード、rgbで指定できる。rgbaの'a'は、透過の意味を表す。</p>
+    <div>
+      <p class="codepen" data-height="370" data-theme-id="dark" data-default-tab="css,result" data-user="kodashim" data-slug-hash="OJXEGLB" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="color-style">
+        <span>See the Pen <a href="https://codepen.io/kodashim/pen/OJXEGLB">
+        color-style</a> by kodashim (<a href="https://codepen.io/kodashim">@kodashim</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </div>
+
+    <h2 id="2">background-color : 背景色を指定する</h2>
+    <div>
+      <p class="codepen" data-height="380" data-theme-id="dark" data-default-tab="css,result" data-user="kodashim" data-slug-hash="VwjdNPX" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="background-color">
+        <span>See the Pen <a href="https://codepen.io/kodashim/pen/VwjdNPX">
+        background-color</a> by kodashim (<a href="https://codepen.io/kodashim">@kodashim</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </div>
+
+    <h2 id="3">background-*** : 背景画像を設定する</h2>
+    <p>picは画像の設定無し。setPicは詳細な画像設定あり。<br>repeat：初期値は繰り返し表示される。なので、no-repeartを指定するのがベター。<br>size : 詳細は<a href="https://developer.mozilla.org/ja/docs/Web/CSS/background-size" target="_blank" rel="noopener noreferrer">こちら</a> <br>position: 詳細は<a href="https://developer.mozilla.org/ja/docs/Web/CSS/background-position" target="_blank" rel="noopener noreferrer">こちら</a></p>
+    <div>
+      <p class="codepen" data-height="600" data-theme-id="dark" data-default-tab="css,result" data-user="kodashim" data-slug-hash="XWKYQVM" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="XWKYQVM">
+        <span>See the Pen <a href="https://codepen.io/kodashim/pen/XWKYQVM">
+        XWKYQVM</a> by kodashim (<a href="https://codepen.io/kodashim">@kodashim</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </div>
+
+    <h2 id="4">background : 背景のショートハンド</h2>
+    <div>
+      <p class="codepen" data-height="540" data-theme-id="dark" data-default-tab="css,result" data-user="kodashim" data-slug-hash="eYzKaYG" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="eYzKaYG">
+        <span>See the Pen <a href="https://codepen.io/kodashim/pen/eYzKaYG">
+        eYzKaYG</a> by kodashim (<a href="https://codepen.io/kodashim">@kodashim</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </div>
+
+    <h2 id="5">opacity : 透過 / linear-gradient : グラデーション</h2>
+    <div>
+      <p class="codepen" data-height="350" data-theme-id="dark" data-default-tab="css,result" data-user="kodashim" data-slug-hash="GRqGaMJ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="opacity/graduation">
+        <span>See the Pen <a href="https://codepen.io/kodashim/pen/GRqGaMJ">
+        opacity/graduation</a> by kodashim (<a href="https://codepen.io/kodashim">@kodashim</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </div>
+  </section>
 
 </body>
 </html>

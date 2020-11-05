@@ -1,35 +1,25 @@
 body{
   margin: 100px auto;
-  width: 500px;
+  width: 900px;
 }
+
+h1{
+  color: #333;
+  border-bottom: 1px solid #999;
+}
+
+h2{
+  color: #666;
+  margin-top: 80px;
+  font-size: 18px;
+}
+
+a{
+  text-decoration: none;
+  color: #4070ff;
+}
+
 p{
-  margin: 20px 0;
-}
-
-.back{
-
-  background-image: url(../work/img/offer01_sv_02.jpg);
-
-  &-repeat{
-    background-repeat: no-repeat;
-  }
-
-  &-size{
-    &-default{
-      background-size: auto;
-    }
-    &-contain{
-      background-size: contain;
-    }
-    &-cover{
-      background-size: cover;
-    }
-    &-px{
-      background-size: 20px 100px;
-    }
-  }
-
-  &-pos{
-    background-position: 0%;
-  }
+  color: #333;
+  font-size: 13px;
 }
