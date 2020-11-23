@@ -23,3 +23,19 @@ p{
   color: #333;
   font-size: 13px;
 }
+
+.button {
+  margin: 40px auto;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 45px;
+  border-radius: 4px;
+  color: white;
+  background: #0bd;
+  &:hover{
+    opacity: 0.5;
+  }
+}

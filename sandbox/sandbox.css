@@ -23,4 +23,27 @@ p {
   color: #333;
   font-size: 13px;
 }
+
+.button {
+  margin: 40px auto;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 45px;
+  border-radius: 4px;
+  color: white;
+  background: #0bd;
+}
+
+.button:hover {
+  opacity: 0.5;
+}
 /*# sourceMappingURL=sandbox.css.map */
