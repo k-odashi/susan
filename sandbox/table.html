@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./sandbox.css">
+  <title>Table</title>
+</head>
+<body>
+
+  <section>
+    <h1>テーブルの基本</h1>
+
+    <ol>
+      <li><a href="#1">tableタグの基本</a></li>
+      <li><a href="#2">tableタグで表を作成してみよう</a></li>
+      <li><a href="#3">中央(center)寄せにする</a></li>
+      <li><a href="#4">border-collapseプロパティ</a></li>
+      <li><a href="#5">セルを結合する</a></li>
+      <li><a href="#6">幅を変更する</a></li>
+    </ol>
+
+    <hr>
+
+    <h2 id="1">tableタグの基本</h2>
+    <img src="https://udemy.benesse.co.jp/wp-content/uploads/table-large.png" width="360" alt="">
+    <p>このような表は、table要素と、以下で解説するth要素、tr要素、td要素を組み合わせることによって作成できます。</p>
+
+<br>
+<br>
+    <h3>td要素</h3>
+    <img src="https://udemy.benesse.co.jp/wp-content/uploads/td-large.png" width="360" alt="">
+    <p>td要素は、<span class="highlight">表のデータ</span>を入れるための要素です。上記のイメージ図であれば、「前田」や「１０」など、それぞれがデータです。今回の場合はデータが４個存在することになります。</p>
+
+    <h3>th要素</h3>
+    <img src="https://udemy.benesse.co.jp/wp-content/uploads/th-large.png" width="360" alt="">
+    <p>th要素では、<span class="highlight">表の「見出し」</span>を作成することができます。上記の表のイメージだと、「名前」と「背番号」がth要素です。</p>
+
+    <h3>tr要素</h3>
+    <img src="https://udemy.benesse.co.jp/wp-content/uploads/tr-large.png" width="360" alt="">
+    <pre>tr要素は、<span class="highlight">表の行</span>を定義するための要素です。上記の表のイメージだと、
+
+      ①「名前」・「背番号」
+      
+      ②「前田」・「７」
+      
+      ③「鈴木」・「１０」
+      
+の３つの行それぞれがtr要素です。
+      </pre>
+
+      <hr>
+
+      <h2 id="2">tableタグで表を作成してみよう</h2>
+      <div>
+        <p class="codepen" data-height="365" data-theme-id="dark" data-default-tab="html,result" data-user="kodashim" data-slug-hash="wvzvRqP" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="table">
+          <span>See the Pen <a href="https://codepen.io/kodashim/pen/wvzvRqP">
+          table</a> by kodashim (<a href="https://codepen.io/kodashim">@kodashim</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+      </div>
+      <p>コードの１行目で、<span class="highlight">&lt;table border=”1″&gt;</span>というコードがありました。
+        <br>
+        <span class="highlight">&lt;table border&gt;</span>を指定すれば、テーブルに枠線を表示させることができます。これはborder属性と呼ばれています。
+        <br>
+        border属性に指定した数値が、テーブルの枠線の幅になります。
+        <br>
+        もし仮に、border属性を指定しなければ、枠線が消えるので、以下のようなテーブルとなります。
+        </p>
+        <table>
+          　<tr>
+            　　<th>日付</th>
+            　　<th>集合場所</th>
+            　</tr>
+          　<tr>
+            　　<td>2020/4/8</td>
+            　　<td>渋谷</td>
+            　</tr>
+          　<tr>
+            　　<td>2020/5/20</td>
+            　　<td>原宿</td>
+            　</tr>
+        </table>
+
+        <br>
+        <br>
+
+        <hr>
+
+<h2 id="3">中央(center)寄せにする</h2>
+<p>先ほど作成したテーブルでは、見出し（th要素）以外のtr要素が左寄せになっていました。
+  <br>
+  ※th要素はデフォルトで中央寄せになります。
+  <br>
+  tr要素を中央寄せ（center）にするには、tr要素に<span class="highlight">「align=”center”」</span>というコードを記述してあげます。以下のようなコードを書いてみましょう。
+</p>
+<div>
+  <p class="codepen" data-height="365" data-theme-id="dark" data-default-tab="html,result" data-user="kodashim" data-slug-hash="vYXYvVm" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="table-align">
+    <span>See the Pen <a href="https://codepen.io/kodashim/pen/vYXYvVm">
+    table-align</a> by kodashim (<a href="https://codepen.io/kodashim">@kodashim</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</div>
+
+<br>
+<br>
+
+<hr>
+
+<h2 id="4">border-collapseプロパティ</h2>
+<p>テーブルの枠線は、特に何も指定しない限りは２重線になります。
+<br>
+  １重線にするためには、<span class="highlight">border-collapse:collapse;</span>を指定します。
+<br>
+  CSSファイルに以下のコードを記述しましょう。（HTMLのコードは上記のコードと同じです。）
+</p>
+<div>
+  <p class="codepen" data-height="232" data-theme-id="dark" data-default-tab="css,result" data-user="kodashim" data-slug-hash="GRjRPPM" style="height: 232px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="table-">
+    <span>See the Pen <a href="https://codepen.io/kodashim/pen/GRjRPPM">
+    table-</a> by kodashim (<a href="https://codepen.io/kodashim">@kodashim</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</div>
+
+
+<br>
+<br>
+
+<hr>
+
+<h2 id="5">セルを結合する</h2>
+
+<h3>横方向にセルを結合する</h3>
+<p>横方向でセルを結合するには、結合を適応させたいtd要素に対して<span class="highlight">colspan</span>という属性を指定します。
+  <br>
+  <span class="highlight">colspan</span>には、結合したい数を指定します。具体的なコードを紹介します。
+  </p>
+  <div>
+    <p class="codepen" data-height="263" data-theme-id="dark" data-default-tab="html,result" data-user="kodashim" data-slug-hash="JjRjwqK" style="height: 263px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="colspan">
+      <span>See the Pen <a href="https://codepen.io/kodashim/pen/JjRjwqK">
+      colspan</a> by kodashim (<a href="https://codepen.io/kodashim">@kodashim</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+  </div>
+
+
+<h3>縦方向にセルを結合する</h3>
+<p>縦方向にセルを結合する場合は、結合を適応させたいtd要素に対して<span class="highlight">rowspan</span>という属性を指定します。
+  <br>
+  <span class="highlight">rowspan</span>には、結合したい数を指定します。では、具体的なコードを見てみましょう。
+  </p>
+<div>
+  <p class="codepen" data-height="256" data-theme-id="dark" data-default-tab="html,result" data-user="kodashim" data-slug-hash="XWjWoLJ" style="height: 256px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="rowspan">
+    <span>See the Pen <a href="https://codepen.io/kodashim/pen/XWjWoLJ">
+    rowspan</a> by kodashim (<a href="https://codepen.io/kodashim">@kodashim</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</div>
+
+<br>
+<br>
+
+<hr>
+
+<h2 id="6">幅を変更する</h2>
+<p>テーブルの幅を変更するには、widthという属性で幅を指定します。
+  <br>
+  <span class="highlight">&lt;table width=”300″&gt;</span>と記述します。
+</p>
+<div>
+  <p class="codepen" data-height="339" data-theme-id="dark" data-default-tab="html,result" data-user="kodashim" data-slug-hash="XWjWOJb" style="height: 339px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="XWjWOJb">
+    <span>See the Pen <a href="https://codepen.io/kodashim/pen/XWjWOJb">
+    XWjWOJb</a> by kodashim (<a href="https://codepen.io/kodashim">@kodashim</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</div>
+
+  </section>
+
+  <hr>
+  <h3>参考</h3>
+  <ul>
+    <li><a href="https://b-risk.jp/blog/2020/02/htmlmail/">おさえておきたいポイント</a></li>
+    <li><a href="https://www.campaignmonitor.com/css/">Campaign Mpnotor</a></li>
+  </ul>
+
+</body>
+</html>

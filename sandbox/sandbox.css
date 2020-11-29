@@ -11,7 +11,13 @@ h1 {
 h2 {
   color: #666;
   margin-top: 80px;
-  font-size: 18px;
+  font-size: 20px;
+}
+
+h3 {
+  color: #333;
+  margin-top: 40px;
+  font-size: 16px;
 }
 
 a {
@@ -19,9 +25,9 @@ a {
   color: #4070ff;
 }
 
-p {
+p, pre {
   color: #333;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .button {
@@ -45,5 +51,10 @@ p {
 
 .button:hover {
   opacity: 0.5;
+}
+
+.highlight {
+  font-weight: bold;
+  background: #f5ffba;
 }
 /*# sourceMappingURL=sandbox.css.map */
