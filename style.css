@@ -165,18 +165,22 @@ header time {
   background: #f9f9f9;
 }
 
+.curriculum section {
+  margin: 40px;
+}
+
 .curriculum h1 {
   font-weight: 900;
-  font-size: 16px;
-  color: #333;
+  font-size: 14px;
+  color: #444;
 }
 
 .curriculum h2 {
-  margin: 20px 0 4px;
+  margin: 12px 0 4px;
   padding-top: 6px;
-  font-weight: 900;
-  font-size: 14px;
-  color: #666;
+  font-weight: 600;
+  font-size: 12px;
+  color: #888;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,7 +188,7 @@ header time {
 
 .curriculum__link {
   margin-left: 8px;
-  font-weight: 900;
+  font-weight: 400;
   font-size: 14px;
   color: #5784b1;
   display: -webkit-box;
@@ -195,13 +199,17 @@ header time {
           align-items: center;
 }
 
+.curriculum__link:hover {
+  font-weight: 600;
+}
+
 .curriculum__link i {
   font-size: 16px;
 }
 
 .curriculum li {
   font-size: 14px;
-  margin-top: 4px;
+  margin-top: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,6 +272,7 @@ header time {
 
 footer {
   border-top: 1px solid #eee;
+  margin-top: 40px;
 }
 
 footer small {

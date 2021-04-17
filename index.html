@@ -1,112 +1,248 @@
 <!DOCTYPE html>
 <html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=5.0"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://favicon-gallery.com/img/kewpie_favi.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Susan Tech School</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=5.0">
-  <link rel="stylesheet" href="./reset.css">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="shortcut icon" href="https://favicon-gallery.com/img/kewpie_favi.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <title>Susan Tech School</title>
-</head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>Web Tech School</h1>
+        <p>Web勉強ポータルサイト</p>
+      </header>
 
-<body>
-  <div class="wrap">
-    <header>
-      <h1>Web Tech School</h1>
-      <p>Web勉強ポータルサイト</p>
-      <time>更新：2020.12.17</time>
-    </header>
-
-    <section class="nextTime">
-      <h1 class="style-hidden">次回</h1>
-
-      <section class="nextTime-head">
-        <h1>日時</h1>
-        <div class="nextTime-headWrap">
-          <time datetime="2020-11-09T21:00">12/17(木) 21:00~22:30</time>
-          <a href="https://yjcorp.zoom.us/j/95645984248?pwd=VTU5RFRFN25kUVF0bk9aNEh6L3prdz09" target="_blank" rel="noopener noreferrer"><i class="material-icons">launch</i>ZOOM URL</a>
-        </div>
-      </section>
-
-      <section class="nextTime-body">
-        <h1>内容</h1>
-        <div class="nextTime-bodyWrap">
-          <h2>CSS演習</h2>
+      <main class="curriculum">
+        <section>
+          <h1>練習用課題</h1>
           <ul>
-            <li>CSSプロパティ演習</li>
+            <li>
+              <a
+                class="curriculum__link"
+                target="_blank"
+                href="https://www.figma.com/file/j0r8oHRNuugiIay27dfn7T/?node-id=506%3A43"
+                >デザインパターン（Figma）</a
+              >
+            </li>
           </ul>
-        </div>
-      </section>
-    </section>
+        </section>
+        <section>
+          <h1>参考コード</h1>
+          <ul>
+            <li>
+              <a
+                class="curriculum__link"
+                href="https://github.com/k-odashi/susan-haru/pull/1"
+                target="_blank"
+                rel="noopener noreferrer"
+                >リファクタリング練習 - Accordion編</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h1>参考Webサイト</h1>
+          <ul>
+            <li>
+              <a
+                class="curriculum__link"
+                href="https://qiita.com/masaki1117/items/26797d065b5f365d78fa"
+                target="_blank"
+                rel="noopener noreferrer"
+                >よく使うClass名とCSS設計</a
+              >
+            </li>
+            <li>
+              <a
+                class="curriculum__link"
+                target="_blank"
+                href="https://yoshikawaweb.com/element/"
+                >HTML5 入れ子チートシート</a
+              >
+            </li>
+          </ul>
 
-    <section class="curriculum">
-      <h1>カリキュラム一覧</h1>
+          <h2>Github</h2>
+          <ul>
+            <li>
+              <a
+                class="curriculum__link"
+                href="https://github.com/k-odashi/susan-haru"
+                target="_blank"
+                >リポジトリ</a
+              >
+            </li>
+            <li>
+              <a
+                class="curriculum__link"
+                href="https://qiita.com/negisys/items/04700c688382a0865947"
+                target="_blank"
+                >Githubのアカウントを作成する方法</a
+              >
+            </li>
+            <li>
+              <a
+                class="curriculum__link"
+                href="https://docs.github.com/ja/desktop/installing-and-configuring-github-desktop/installing-github-desktop"
+                target="_blank"
+                >GitHub Desktopのインストール方法</a
+              >
+            </li>
+            <li>
+              <a
+                class="curriculum__link"
+                href="https://docs.github.com/ja/desktop/contributing-and-collaborating-using-github-desktop/cloning-a-repository-from-github-to-github-desktop"
+                target="_blank"
+                >GitHubからのGitHub Desktopへのリポジトリのクローン方法</a
+              >
+            </li>
+          </ul>
 
-        <h2>HTML基礎 <a class="curriculum__link" href="./slide/01.pdf" target="_blank" rel="noopener noreferrer"><i class="material-icons">launch</i>資料</a></h2>
-        <ul>
-          <li>Webの基礎知識</li>
-          <li>HTMLの概要</li>
-          <li>HTMLをブラウザで表示させる</li>
-          <li>HTMLの要素紹介</li>
-          <li>Webページの目的</li>
-        </ul>
+          <h2>Tips</h2>
+          <ul>
+            <li>
+              <a
+                class="curriculum__link"
+                target="_blank"
+                href="https://arts-factory.net/marker/"
+                >蛍光ペンで引いたようなラインマーカーをテキスト上に設置する方法</a
+              >
+            </li>
+            <li>
+              <a
+                class="curriculum__link"
+                target="_blank"
+                href="https://webliker.info/89678/"
+                >Copyright（コピーライト）を図解で解説！</a
+              >
+            </li>
+            <li>
+              <a
+                class="curriculum__link"
+                target="_blank"
+                href="https://techblog.yahoo.co.jp/entry/2020090830016393/"
+                >表示速度を飛躍的に向上させるHTML/CSS最新仕様</a
+              >
+            </li>
+          </ul>
 
-        <h2>Tableタグ基礎 <a class="curriculum__link" href="https://k-odashi.github.io/susan/sandbox/table.html" target="_blank" rel="noopener noreferrer"><i class="material-icons">launch</i>資料</a></h2>
+          <h2>Prettier</h2>
 
-        <h2>imgタグの正しい使い方 <a class="curriculum__link" href="https://www.figma.com/proto/j0r8oHRNuugiIay27dfn7T/Untitled?node-id=33%3A277&scaling=min-zoom" target="_blank" rel="noopener noreferrer"><i class="material-icons">launch</i>資料</a></h2>
+          <ul>
+            <li>
+              <a
+                class="curriculum__link"
+                target="_blank"
+                href="https://ma-vericks.com/vscode-prettier/"
+                >【VSCode】Prettierの使い方＆おすすめ設定を紹介</a
+              >
+            </li>
+            <li>
+              <a
+                class="curriculum__link"
+                target="_blank"
+                href="https://qiita.com/KKKKK/items/3b9dba55653cb7993bf5"
+                >prettier onSave vscode 動かない時の対処法</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h1>講義資料</h1>
+          <ul>
+            <li>
+              <a
+                class="curriculum__link"
+                href="./slide/01.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >HTML基礎</a
+              >
+            </li>
+            <li>
+              <a
+                class="curriculum__link"
+                href="https://k-odashi.github.io/susan/sandbox/table.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Tableタグ基礎</a
+              >
+            </li>
+            <li>
+              <a
+                class="curriculum__link"
+                href="https://www.figma.com/proto/j0r8oHRNuugiIay27dfn7T/Untitled?node-id=33%3A277&scaling=min-zoom"
+                target="_blank"
+                rel="noopener noreferrer"
+                >imgタグの正しい使い方</a
+              >
+            </li>
+            <li>
+              <a
+                class="curriculum__link"
+                href="https://www.figma.com/proto/j0r8oHRNuugiIay27dfn7T/susan?node-id=74%3A39&scaling=scale-down-width"
+                target="_blank"
+                rel="noopener noreferrer"
+                >開発環境のTips</a
+              >
+            </li>
+            <li>
+              <a
+                class="curriculum__link"
+                href="https://www.figma.com/proto/j0r8oHRNuugiIay27dfn7T/susan?node-id=50%3A29&scaling=contain"
+                target="_blank"
+                rel="noopener noreferrer"
+                >CSS基礎 STEP1</a
+              >
+            </li>
+            <li>
+              <a
+                class="curriculum__link"
+                href="https://www.figma.com/proto/j0r8oHRNuugiIay27dfn7T/susan?node-id=106%3A44&scaling=contain"
+                target="_blank"
+                rel="noopener noreferrer"
+                >CSS基礎 STEP2</a
+              >
+            </li>
+            <li>
+              <a
+                class="curriculum__link"
+                href="https://www.figma.com/proto/j0r8oHRNuugiIay27dfn7T/susan?node-id=117%3A1&scaling=contain"
+                target="_blank"
+                rel="noopener noreferrer"
+                >CSS基礎 STEP3</a
+              >
+            </li>
+          </ul>
+          <h2>課題ページ</h2>
+          <ul>
+            <li>
+              <a class="curriculum__link" href="./work/"
+                >【公式】シーズンヴェールウォッシュ3キャンペーン</a
+              >
+            </li>
+          </ul>
+        </section>
+      </main>
 
-        <h2>開発環境のTips <a class="curriculum__link" href="https://www.figma.com/proto/j0r8oHRNuugiIay27dfn7T/susan?node-id=74%3A39&scaling=scale-down-width" target="_blank" rel="noopener noreferrer"><i class="material-icons">launch</i>資料</a></h2>
-
-        <ul>
-          <li>テキストエディタ：VS Code</li>
-          <li>ブラウザ：Chrome</li>
-        </ul>
-
-        <h2>マークアップ演習</h2>
-        <ul>
-          <li>ひたすら実践（詳細はページ下）</li>
-        </ul>
-
-        <h2>CSS基礎 STEP1<a class="curriculum__link" href="https://www.figma.com/proto/j0r8oHRNuugiIay27dfn7T/susan?node-id=50%3A29&scaling=contain" target="_blank" rel="noopener noreferrer"><i class="material-icons">launch</i>資料</a></h2>
-        <ul>
-          <li>CSSとは</li>
-          <li>CSSの書き方</li>
-          <li>プロパティの種類</li>
-          <li>IDとCLASS</li>
-          <li>リセットCSS</li>
-          <li>ファイル管理</li>
-        </ul>
-
-        <h2>CSS基礎 STEP2<a class="curriculum__link" href="https://www.figma.com/proto/j0r8oHRNuugiIay27dfn7T/susan?node-id=106%3A44&scaling=contain" target="_blank" rel="noopener noreferrer"><i class="material-icons">launch</i>資料</a></h2>
-        <ul>
-          <li>CSSプロパティ演習</li>
-        </ul>
-
-        <h2>CSS基礎 STEP3<a class="curriculum__link" href="https://www.figma.com/proto/j0r8oHRNuugiIay27dfn7T/susan?node-id=117%3A1&scaling=contain" target="_blank" rel="noopener noreferrer"><i class="material-icons">launch</i>資料</a></h2>
-        <ul>
-          <li>セレクタ</li>
-          <li>優先順位</li>
-          <li>ベンダープレフィックス</li>
-          <li>単位（px, em, %, vw...）</li>
-          <li>BEM</li>
-          <li>SASS</li>
-        </ul>
-    </section>
-
-    <section class="work">
-      <h1>演習課題</h1>
-      <p>下記のキャンペーンサイトのWebページを実装します。アウトラインの作成、HTMLマークアップ、SMPのCSS記述、PCのCSS記述の順に行います。</p>
-
-      <h2>キャンペーンサイト</h2>
-      <a class="work__link" href="./work/index.html" target="_blank" rel="noopener noreferrer"><i class="material-icons">launch</i>シーズンヴェールウォッシュ3キャンペーン</a>
-    </section>
-
-    <footer>
-      <small>©kei odashima</small>
-    </footer>
-  </div>
-</body>
-
+      <footer>
+        <small>©kei odashima</small>
+      </footer>
+    </div>
+  </body>
 </html>
